@@ -1,0 +1,40 @@
+
+CREATE TABLE test(
+id int,
+emp1 string,
+emp2 string,
+sal1 double,
+sal2 double)
+STORED AS TEXTFILE;
+
+INSERT INTO TABLE test values(1,'adam','hope',10000.0,20000.0);
+INSERT INTO TABLE test values(1,'steven','william',2000.0,1000.0);
+INSERT INTO TABLE test values(1,'john','dunk',5000.0,15000.0);
+
+# Unpivoting the data by assigning sequence number based on id 
+
+SELECT 
+t.id,
+row_number() over (partition by t.id ) as seq_nbr,
+t.emp,
+t.sal
+FROM(
+SELECT
+t1.id as id,t2.value as emp,t2.value1 as sal
+FROM raw_rdl.test t1
+LATERAL VIEW explode (MAP('emp1',emp1)) t2 as key,value
+LATERAL VIEW explode (MAP('sal1',sal1)) t2 as key1,value1
+UNION
+SELECT
+t1.id,t2.value as emp,t2.value1 as sal
+FROM raw_rdl.test t1
+LATERAL VIEW explode (MAP('emp2',emp2)) t2 as key,value
+LATERAL VIEW explode (MAP('sal2',sal2)) t2 as key1,value1 ) t;
+
+
+1       1       adam       10000.0
+1       2       hope       12000.0
+2       1       steven     2000.0
+2       2       william    1000.0
+3       1       john       5000.0
+3       2       dunk       15000.0
