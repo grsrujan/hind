@@ -1,3 +1,5 @@
+-- This will skip 1 record from data file
+
 CREATE TABLE test
 ( 
 name STRING, 
