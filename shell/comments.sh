@@ -15,7 +15,7 @@ function check_trigger()
     echo "trigger file exists"
     exit 13
   else
-    echo "trigger is missing so its a new run"
+    echo "trigger is missing"
   fi
 }
 COMMENT1
