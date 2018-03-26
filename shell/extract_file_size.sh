@@ -1,2 +1,2 @@
-This will display filesize
-ls -ltrh filename | awk '{print $5}'
+#This will display filesize
+ls -ltrh $0 | awk '{print $5}'
