@@ -1,0 +1,7 @@
+CREATE TABLE test
+( 
+name STRING, 
+id   INT 
+) 
+row format delimited fields terminated BY '\001'
+tblproperties("skip.header.line.count"="1");
