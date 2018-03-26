@@ -5,7 +5,7 @@
 
 #single line comment
 
-: <<'COMMENT3'
+: <<'COMMENT1'
 echo "This will not be displayed as it is enclosed within multiline comment"
 ##############################################################
 function check_trigger()
@@ -18,6 +18,6 @@ function check_trigger()
     echo "trigger is missing so its a new run"
   fi
 }
-COMMENT3
+COMMENT1
 
 echo " single and multi line comments in bash scripting"
