@@ -1,3 +1,4 @@
+#!/bin/bash
 #here we can use == operator too for comparision
 if [ "$1" = "$2" ];then
   echo "both are equal"
