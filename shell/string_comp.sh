@@ -11,3 +11,17 @@ if [ "$1" != "$2" ];then
 else
   echo "entered strings are equal"
 fi
+
+
+#case insensitive comparision
+
+#forcing shell todo insensitive comparision
+
+shopt -s nocasematch
+if [[ "TEST" = "test" ]]
+then
+  echo "Matched"
+fi
+
+#to unset use -u
+shopt -u nocasematch
