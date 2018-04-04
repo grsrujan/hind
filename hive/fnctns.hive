@@ -1,0 +1,46 @@
+-- String Functions
+
+-- SUBSTRING
+select substring('test',1,2);
+-- LENGTH
+select length('test');
+-- LTRIM
+select ltrim('   test');
+-- RTRIM
+select rtrim('test   ');
+-- TRIM
+select trim('   test     ');
+--CONCAT
+select concat('sample',' ','text');
+--CONCAT_WS
+select concat_ws(',','sample','text');
+-- LPAD
+select lpad('test',7,'$');
+$$$test
+-- RPAD
+select rpad('test',7,'$');
+test$$$
+
+-- LOWER or LCASE
+select lcase('TEXT');
+text
+-- UPPER or UCASE
+select ucase('text');
+TEXT
+
+-- REVERSE
+select reverse('test');
+tset
+
+-- REPEAT
+select repeat('test',2);
+testtest
+
+-- SPLIT
+
+
+select current_database();
+
+ select current_date();
+ 
+ 
