@@ -1,1 +1,10 @@
-
+cume_dist()  
+dense_rank() OVER([partition_by_clause] order_by_clause)  
+first_value(expr) OVER([partition_by_clause] order_by_clause [window_clause])  
+lag(expr [, offset] [, default]) OVER ([partition_by_clause] order_by_clause)  
+last_value(expr) OVER([partition_by_clause] order_by_clause [window_clause])  
+lead(expr [, offset] [, default]) OVER([partition_by_clause] order_by_clause)  
+ntile()  
+percent_rank()  
+rank() OVER([partition_by_clause] order_by_clause)  
+row_number() OVER([partition_by_clause] order_by_clause)  
