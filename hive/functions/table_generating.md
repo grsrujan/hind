@@ -1,1 +1,6 @@
-
+explode(Array|Array<T>|Map a)  
+inline(Array<Struct [, Struct]> a)  
+json_tuple(STRING jsonStr, STRING k1, STRING k2, ...)  
+parse_url_tuple(STRING url, STRING p1, STRING p2, ...)  
+posexplode(ARRAY)  
+stack(INT n, v1, v2, ..., vk)  
