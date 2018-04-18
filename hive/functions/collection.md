@@ -1,1 +1,5 @@
-
+array_contains(Array<T> a, val)  
+array<K.V> map_keys(Map<K.V> a)  
+array<K.V> map_values(Map<K.V> a)  
+size(Map<K.V>|Array<T> a)  
+sort_array(Array<T> a)  
