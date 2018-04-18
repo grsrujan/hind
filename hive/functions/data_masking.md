@@ -1,1 +1,6 @@
-
+mask(STRING str [, STRING upper [, STRING lower [, STRING number]]])  
+mask_first_n(STRING str [, INT n])  
+mask_last_n(STRING str [, INT n])  
+mask_show_first_n(STRING str [, INT n])  
+mask_show_last_n(STRING str [, INT n])  
+mask_hash(STRING|CHAR|VARCHAR str)  
