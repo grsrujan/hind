@@ -1,1 +1,7 @@
-
+assert_true(BOOLEAN condition)  
+coalesce(T v1, T v2, ...)  
+if(BOOLEAN testCondition, T valueTrue, T valueFalseOrNull)  
+isnotnull(a)  
+isnull(a)  
+nullif(a, b)  
+nvl(T value, T default_value)  
