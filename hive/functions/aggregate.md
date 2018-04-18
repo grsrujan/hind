@@ -1,5 +1,7 @@
-avg(col)  
+avg(col)   
+Returns the average of the elements in the group or the average of the distinct values of the column in the group.  
 count([DISTINCT] col)  
+count(*) - Returns the total number of retrieved rows, including rows containing NULL values. count(expr) - Returns the number of rows for which the supplied expression is non-NULL. count(DISTINCT expr[, expr]) - Returns the number of rows for which the supplied expression(s) are unique and non-NULL. Execution of this can be optimized with hive.optimize.distinct.rewrite.
 stddev_pop(col)  
 stddev_samp(col)  
 sum(col)  
