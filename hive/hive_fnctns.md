@@ -1,4 +1,4 @@
-#Aggregate
+# Aggregate
  
 avg(col)  
 count([DISTINCT] col)  
@@ -29,7 +29,7 @@ regr_sxx(T independent, T dependent)
 regr_sxy(T independent, T dependent)  
 regr_syy(T independent, T dependent)  
  
- #Analytic
+# Analytic
 cume_dist()  
 dense_rank() OVER([partition_by_clause] order_by_clause)  
 first_value(expr) OVER([partition_by_clause] order_by_clause [window_clause])  
@@ -40,13 +40,13 @@ ntile()
 percent_rank()  
 rank() OVER([partition_by_clause] order_by_clause)  
 row_number() OVER([partition_by_clause] order_by_clause)  
- #Collection  
- #Complex Type  
- #Conditional  
- #Date  
- #Mathematical  
- #Misc  
- #String  
- #Data Masking  
- #Table Generating  
- #Type Conversion  
+# Collection  
+# Complex Type  
+# Conditional  
+# Date  
+# Mathematical  
+# Misc  
+# String  
+# Data Masking  
+# Table Generating  
+# Type Conversion  
