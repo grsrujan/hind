@@ -1,1 +1,5 @@
-
+array(val1, val2, ...)  
+create_union(tag, val1, val2, ...)  
+map(key1, value1, ...)  
+named_struct(name1, val1, ...)  
+struct(val1, val2, ...)  
