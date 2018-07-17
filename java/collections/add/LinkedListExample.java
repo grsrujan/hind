@@ -32,6 +32,13 @@ public class LinkedListExample {
 	     
 	    ll.addLast("x");
 	     System.out.println("LinkedList after adding element: "+ll);
+		
+	     LinkedList<String> la = new LinkedList<String>();
+	     
+	     //copy one list to other
+	     
+	     la.addAll(ll);
+	     System.out.println(la);
 
 	}
 
@@ -44,5 +51,5 @@ LinkedList elements: [a, b, c, d, e, f, g, a]
 LinkedList after adding element: [a, b, c, z, d, e, f, g, a]
 LinkedList after adding element: [d, a, b, c, z, d, e, f, g, a]
 LinkedList after adding element: [d, a, b, c, z, d, e, f, g, a, x]
-
+[d, a, b, c, z, d, e, f, g, a, x]
 */
