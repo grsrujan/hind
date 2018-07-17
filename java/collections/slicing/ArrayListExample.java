@@ -35,7 +35,7 @@ public class ArrayListExample {
 		
 	     // first occurrence in a list
 	     
-	     System.out.println("Last occurrence of element g: "+al.indexOf("g"));
+	     System.out.println("First occurrence of element g: "+al.indexOf("g"));
 	     
 	     // last occurrence in a list
 	     
@@ -58,7 +58,7 @@ SubList stored in ArrayList: [b, g, c]
 SubList stored in List: [b, g, c]
 First element of the ArrayList: a
 Second element of the ArrayList: b
-Last occurrence of element g: 2
+First occurrence of element g: 2
 Last occurrence of element g: 7
 checking if 'a' is present in arraylist: true
 checking if 'z' is present in arraylist: false
