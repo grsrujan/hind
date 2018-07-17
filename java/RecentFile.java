@@ -2,7 +2,7 @@ package filetest;
 import java.io.*;
 import java.util.*;
 
-public class Test {
+public class RecentFile {
 	
 	public String getLatestFilefromDir(){
 		
@@ -33,7 +33,7 @@ public class Test {
 		
 	
 	public static void main(String[] args)	{
-		Test tt = new Test();
+		RecentFile tt = new RecentFile();
 		
 		tt.getLatestFilefromDir();
 		
