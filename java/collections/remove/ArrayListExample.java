@@ -42,3 +42,15 @@ public class ArrayListExample {
 
 	}
 }
+
+/*
+
+output:
+
+ArrayList before remove:[a, b, c, d, e, f, g, h]
+ArrayList after remove:[b, e, f, g, h]
+ArrayList after remove:[e, f, g]
+ArrayList after removing everything :[]
+
+*/
+
