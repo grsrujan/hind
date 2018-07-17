@@ -6,13 +6,9 @@ public class Test {
 	
 	public String getLatestFilefromDir(){
 		
-		//public static String helloExample() {
 		File fil = new File("C:\\Users\\srujan\\Documents\\test");
 
 		System.out.println(fil.lastModified());
-		//File[] listOfFiles = fil.listFiles();
-		//File[] lastModifiedFile;
-		//fil.lastModified();
 		File [] files = fil.listFiles(new FilenameFilter() {
 		    @Override
 		    public boolean accept(File dir, String name) {
