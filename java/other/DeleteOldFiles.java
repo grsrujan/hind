@@ -18,6 +18,7 @@ class DeleteOldFiles {
 
                     if (diff > cutoff) {
                       file.delete();
+                      System.out.println("deleted file : "+file);
                     }
                 }
             }
