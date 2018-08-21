@@ -4,7 +4,7 @@ import java.util.*;
 class DeleteOldFiles {
     public static void main(String[] args){
 
-        long numDays = 8;                                                    //this needs to be a long.        
+        long numDays = 20;                                                    //this needs to be a long.        
         String dir = "/path/";                                               //WARNING!  old files in this directory will be deleted.
         File directory = new File(dir);
         File[] fList = directory.listFiles();
