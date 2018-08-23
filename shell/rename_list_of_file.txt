@@ -1,0 +1,5 @@
+# The following command will rename list of text files(omits cur_ from filename)
+
+for filename in *.txt; do mv "$filename" "${filename//cur_}"; done;
+
+for filename in *.txt; do mv "$filename" "cur_$filename"; done;
