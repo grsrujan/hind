@@ -1,0 +1,8 @@
+# Delete forcefully file which says device or resource busy
+
+lsof +D /dir_path
+
+results
+COMMAND   PID    USER   FD   TYPE DEVICE SIZE/OFF      NODE NAME
+
+kill -9 PID
