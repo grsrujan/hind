@@ -31,12 +31,12 @@ public class ConvertDate extends UDF {
 		    }
 		    
 		    else if ( dt.length() == 8 ) {
-		    	// If input is of format yyyyMMdd return yyyy-MM-dd
+		    	// If input is of format yyyyMMdd returns yyyy-MM-dd
 		    	String d = new SimpleDateFormat("yyyy-MM-dd").format(new SimpleDateFormat("yyyyMMdd").parse(dt.trim()));
 		    	return d;
 		    }
 		    else {
-		    	// If Input is Julian date(yyyyD) return date in yyyy-MM-dd format
+		    	// If Input is Julian date(yyyyD) returns date in yyyy-MM-dd format
 		    	String b = new SimpleDateFormat("yyyy-MM-dd").format(new SimpleDateFormat("yyyyD").parse(dt.trim()));	    	
 				return b;
 		    }		   
