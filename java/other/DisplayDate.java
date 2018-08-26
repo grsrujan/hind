@@ -9,8 +9,6 @@ import java.text.SimpleDateFormat;
 public class Ddate {
 
 	public static void main(String[] args) throws ParseException{
-		// TODO Auto-generated method stub
-		
 		
 		Date c = new SimpleDateFormat("yyyy-MM-dd").parse("2018-05-05");
 		SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
