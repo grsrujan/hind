@@ -1,3 +1,12 @@
+/*
+This UDF will convert Julian date to calendar date in hive
+enter the following commands in hive shell or .hive script file
+ADD JAR local_jar_path;
+CREATE TEMPORARY FUNCTION convert_date AS 'hive.ConverDate';
+SELECT convert_date('2018142','1212123');  displays 2018-05-22 12:12:12:3
+SELECT convert_date('20180505'); displays 2018-05-05
+*/
+
 package hive;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.Description;
@@ -11,15 +20,6 @@ import java.util.Date;
         value="Returns string which can be cast to hive timestamp/date"
 )
 
-/*
-enter the following commands in hive shell or .hive script file
-ADD JAR local_jar_path;
-CREATE TEMPORARY FUNCTION convert_date AS 'hive.ConverDate';
-
-SELECT convert_date('2018142','1212123');  displays 2018-05-22 12:12:12:3
-SELECT convert_date('20180505'); displays 2018-05-05
-
-*/
 public class ConvertDate extends UDF {
 
 	  public String evaluate(String dt) throws ParseException {
