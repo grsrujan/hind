@@ -6,7 +6,7 @@ import org.apache.commons.lang.StringUtils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class Ddate {
+public class DisplayDate {
 
 	public static void main(String[] args) throws ParseException{
 		
