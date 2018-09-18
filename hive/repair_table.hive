@@ -8,7 +8,7 @@ MSCK REPAIR TABLE tbname;
 
 ANALYZE TABLE tbname COMPUTE STATISTICS;
 
-# force hive to use statistics while running queries
+#following properties need to be set for forcing hive to use statistics while running queries
 
 SET hive.cbo.enable=true;
 SET hive.stats.autogather=true;
