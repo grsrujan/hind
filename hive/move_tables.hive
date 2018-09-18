@@ -1,0 +1,2 @@
+
+ALTER TABLE oldname.tbname RENAME TO newdbname.tbname;
