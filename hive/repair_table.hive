@@ -1,0 +1,17 @@
+# Repair partitioned table
+
+
+MSCK REPAIR TABLE tbname;
+
+
+# Repair non-partitioned table
+
+ANALYZE TABLE tbname COMPUTE STATISTICS;
+
+# force hive to use statistics while running queries
+
+SET hive.cbo.enable=true;
+SET hive.stats.autogather=true;
+SET hive.compute.query.using.stats=true;
+SET hive.stats.fetch.partition.stats=true;
+SET hive.stats.fetch.column.stats=true;
