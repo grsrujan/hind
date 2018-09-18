@@ -1,12 +1,12 @@
 # Repair partitioned table
 
 
-MSCK REPAIR TABLE tbname;
+MSCK REPAIR TABLE dbname.tbname;
 
 
 # Repair non-partitioned table
 
-ANALYZE TABLE tbname COMPUTE STATISTICS;
+ANALYZE TABLE dbname.tbname COMPUTE STATISTICS;
 
 #following properties need to be set for forcing hive to use statistics while running queries
 
