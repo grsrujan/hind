@@ -1,0 +1,15 @@
+### using hcatalog we can import or export data using sqoop from hive ORC table
+
+sqoop import --connect jdbc:mysql://localhost/test \
+--driver com.mysql.jdbc.Driver \
+--username srujan \
+--table test \
+--hcatalog-table test 
+
+
+
+sqoop export --connect jdbc:mysql://localhost/test \
+--driver com.mysql.jdbc.Driver \
+--username srujan \
+--table test \
+--hcatalog-table test \
