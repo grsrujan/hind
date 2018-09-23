@@ -1,3 +1,5 @@
+sqoop export --help
+
 usage: sqoop export [GENERIC-ARGS] [TOOL-ARGS]
 
 Common arguments:
