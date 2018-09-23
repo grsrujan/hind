@@ -1,8 +1,6 @@
 # Repair partitioned table
 
-
 MSCK REPAIR TABLE dbname.tbname;
-
 
 # Repair non-partitioned table
 
