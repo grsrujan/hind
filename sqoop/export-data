@@ -1,0 +1,19 @@
+sqoop export --direct --connect jdbc:netezza://$nz_host:$nz_port/$nz_db \
+--username $nz_user \
+--password-file file:///home/test/pw.txt \
+--export-dir $export_dir/$hive_table \
+--table $nz_table \
+--input-fields-terminated-by '\001'  \
+--input-lines-terminated-by '\n'  \
+--input-null-string '\\N'  \
+--input-null-non-string '\\N'  \
+--m $num_mappers \
+--input-escaped-by '\\' -- --max-errors 100
+
+
+nz_host=localhost
+nz_port=1000
+nz_db=test
+nz_user=srujan
+export_dir=/RAW/hive
+num_mappers=15
