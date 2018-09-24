@@ -1,0 +1,33 @@
+help
+
+create 'namespace:test', 'cf'
+
+list 
+
+scan 'tbname'
+
+put 'tbname' ,'key' , 'cf:colname','value'
+
+get 'tbname','key'
+
+disable 'tbname'
+
+enable 'tbname'
+
+disable 'tbname'
+
+drop 'tbname'
+
+enable 'tbname'
+
+exit
+
+echo "describe 'tbname'" | ./hbase shell -n
+
+./hbase shell ./sample_commands.txt
+
+count 'tbname'
+
+create_namespace 'my_ns'
+
+drop_namespace 'my_ns'
