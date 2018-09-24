@@ -1,0 +1,5 @@
+sqoop-eval \
+--connect jdbc:oracle:thin:@//localhost:1200/stg \
+--username srujan \
+--password-file file:///home/stg.pw \
+--query "select * from test where rownum<10"
