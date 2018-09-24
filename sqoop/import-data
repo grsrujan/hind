@@ -1,0 +1,26 @@
+sqoop import \
+--connect "jdbc:oracle:thin:@//localhost:1200/stg" \
+--username srujan \
+--password-file file:///home/stg.pw \
+--num-mappers 5 \
+--query 'select * from test WHERE $CONDITIONS' \
+--split-by col1 \
+--target-dir /home \
+--fields-terminated-by "," \
+--hive-import \
+--create-hive-table \
+--hive-table default.test
+
+
+sqoop import \
+--connect "jdbc:oracle:thin:@//localhost:1200/stg" \
+--username srujan \
+--password-file file:///home/stg.pw \
+--num-mappers 5 \
+--table db.test \
+--split-by col1 \
+--target-dir /home \
+--fields-terminated-by "," \
+--hive-import \
+--create-hive-table \
+--hive-table default.test
