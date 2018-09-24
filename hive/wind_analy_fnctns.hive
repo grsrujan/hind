@@ -138,3 +138,31 @@ OK
 4       10000.0 4
 5       50000.0 5
 
+NTILE : - Splits data into buckets
+
+here no of buckets =3
+ select NTILE(3) OVER(ORDER BY sal),*  from test;
+ OK
+1       1       1000.0
+1       2       1000.0
+1       1       2000.0
+1       1       2500.0
+2       2       3000.0
+2       3       10000.0
+2       4       10000.0
+3       3       40000.0
+3       2       50000.0
+3       5       50000.0
+
+select NTILE(4) OVER(ORDER BY sal),*  from test;
+OK
+1       1       1000.0
+1       2       1000.0
+1       1       2000.0
+2       1       2500.0
+2       2       3000.0
+2       3       10000.0
+3       4       10000.0
+3       3       40000.0
+4       2       50000.0
+4       5       50000.0
