@@ -1,0 +1,8 @@
+CREATE TABLE test(
+key string,
+col1 string,
+col2 string,
+col3 string)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+with serdeproperties ("hbase.columns.mapping"=":key,cf:col1,cf:col2,cf:col3")
+tblproperties("hbase.table.name"="default:test");
