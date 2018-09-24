@@ -1,0 +1,2 @@
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=","  \
+-Dimporttsv.columns="HBASE_ROW_KEY,cf:col1,cf:col2,cf:col3" "default:test" /home/test/temp.csv
