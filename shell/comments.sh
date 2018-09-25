@@ -20,4 +20,15 @@ function check_trigger()
 }
 COMMENT1
 
+
+: '
+2nd method
+comment1
+comment2
+'
+<< ////
+3 rd method
+
+////
+
 echo " single and multi line comments in bash scripting"
