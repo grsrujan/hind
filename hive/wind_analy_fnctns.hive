@@ -7,6 +7,39 @@ The number of rows to lag can optionally be specified. If the number of rows to 
 Returns null when the lag for the current row extends before the beginning of the window.
 -- FIRST_VALUE
 This takes at most two parameters. The first parameter is the column for which you want the first value, the second (optional) parameter must be a boolean which is false by default. If set to true it skips null values.
+This returns first value from ordered set of values
+
+select *, FIRST_VALUE (sal) OVER (order by sal) from test;
+
+OK
+1       1000.0  1000.0
+2       1000.0  1000.0
+1       2000.0  1000.0
+1       2500.0  1000.0
+2       3000.0  1000.0
+3       10000.0 1000.0
+4       10000.0 1000.0
+3       40000.0 1000.0
+2       50000.0 1000.0
+5       50000.0 1000.0
+
+
+ select *, FIRST_VALUE (sal) OVER (partition by id order by sal) from test;
+ 
+ OK
+1       1000.0  1000.0
+1       2000.0  1000.0
+1       2500.0  1000.0
+2       1000.0  1000.0
+2       3000.0  1000.0
+2       50000.0 1000.0
+3       10000.0 10000.0
+3       40000.0 10000.0
+4       10000.0 10000.0
+5       50000.0 50000.0
+
+
+
 -- LAST_VALUE
 This takes at most two parameters. The first parameter is the column for which you want the last value, the second (optional) parameter must be a boolean which is false by default. If set to true it skips null values.
 The OVER clause
