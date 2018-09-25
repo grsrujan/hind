@@ -135,6 +135,12 @@ Analytics functions
 -- PERCENT_RANK
 -- NTILE
 
+
+PERCENT_RANK :
+
+PERCENT_RANK() = (RANK() – 1) / (Total Rows – 1)
+
+
 ROW NUMBER VS RANK VS DENSE_RANK
 
 row_number : returns unique value for each row starting from 1.
