@@ -1,0 +1,18 @@
+
+Install qdarkstyle with pip by using following command
+
+pip install qdarkstyle
+
+look for mainwindow.py under C:\ProgramData\Anaconda3\Lib\site-packages\spyder\app
+
+Add following command
+
+import qdarkstyle
+
+search for class MainWindow , def __init__ and add following 
+
+self.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+
+save mainwindow.py file and restart spyder 
+
+change syntax coloring to spyder dark tools --> preferences --> syntax coloring
