@@ -1,0 +1,7 @@
+<coordinator-app name="test_coordinator" frequency="0 9 * * TUE-SAT" start="2018-09-22T10:00Z" end="2019-12-31T09:00Z" timezone="America/New_York" xmlns="uri:oozie:coordinator:0.1">
+   <action>
+      <workflow>
+         <app-path>${oozieProjectRoot}/oozie</app-path>
+      </workflow>
+   </action>
+</coordinator-app>
