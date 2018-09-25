@@ -31,4 +31,10 @@ comment2
 
 ////
 
+
+: '''
+4 th method
+
+'''
+
 echo " single and multi line comments in bash scripting"
