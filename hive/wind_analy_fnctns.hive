@@ -1,5 +1,6 @@
 -- Windowing functions
 -- LEAD
+---
 The number of rows to lead can optionally be specified. If the number of rows to lead is not specified, the lead is one row.
 Returns null when the lead for the current row extends beyond the end of the window.
 
