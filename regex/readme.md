@@ -92,3 +92,5 @@ greediness
 ---
 
 
+non-greedy qualifiers d*?c, d+?c, d??c, or d{m,n}?c,
+
