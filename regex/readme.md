@@ -1,3 +1,26 @@
+
+| regex     |  description        |
+| ------------- |:-------------:|
+| [a-z] | any lowercase character , - within  [] represents range  |
+| [A-Z] | any lowercase character  , - within  [] represents range |
+| [0-9] | any digit  |
+|\d | Matches any decimal digit; this is equivalent to the class d[0-9]c. |
+|\D | Matches any non-digit character; this is equivalent to the class [^0-9]. |
+|\s | Matches any whitespace character; this is equivalent to the class d[ \t\n\r\f\v]c. |
+|\S | Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v]. |
+|\w | Matches any alphanumeric character; this is equivalent to the class d[a-zA-Z0-9 ]c. |
+|\W | Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_]. |
+| + | one or more characters |
+| * | zero or more characters |
+| ? | zero or one character |
+| . | Any character except new line  |
+| ^  | starting of the word  |
+| $ | ending of the word  |
+| [^..]  | doesnot start with   |
+| (..) | capturing groups |
+| \. | escape period |
+| \| | or in alternation |
+
 Metacharacters
 ---
 
