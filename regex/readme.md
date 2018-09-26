@@ -18,7 +18,7 @@
 | $ | ending of the word  |
 | [^..]  | doesnot start with   |
 | (..) | capturing groups |
-| \. | escape period |
+| \\. | escape period |
 | \| | or in alternation |
 
 Metacharacters
