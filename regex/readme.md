@@ -10,18 +10,22 @@
 |\S | Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v]. |
 |\w | Matches any alphanumeric character; this is equivalent to the class d[a-zA-Z0-9 ]c. |
 |\W | Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_]. |
+|\b| word boundary |
+|\B| not word boundary |
+| \< | start of word |
+| \> | end of word |
 | + | one or more characters |
 | * | zero or more characters |
 | ? | zero or one character |
 | . | Any character except new line  |
-| ^  | starting of the word  |
-| $ | ending of the word  |
+| ^  | start of line  |
+| $ | end of line  |
 | [^..]  | doesnot start with   |
 | (..) | capturing groups |
 | \\. | escape period |
 | \| | or in alternation |
 
-Metacharacters
+Metacharacters( ^ , [  , . ,$,{,*,(,\,+,),|,?,<,>)
 ---
 
 repetition metacharacters(.,*,+)
