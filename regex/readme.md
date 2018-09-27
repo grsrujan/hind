@@ -80,17 +80,64 @@ start and end of the line
 
 virat$ - matches  a line if it ends with virat
 
-
-grouping
+Conditional: (?(if)then |else)
 ---
+
+grouping ( )
+---
+
+```\b(virat|rohit|shaw)\b -- will match if input contains any words like virat or rohit or shaw ```
+
+```\b(rat|hit|haw)\b -- will not match with virat or rohit or shaw```
+
+capturing groups  
+regex for exact date format (yyyy-dd-mm)
+``` \b(\d\d\d\d)-(\d\d)-(\d\d)\b    -- this has three capturing groups```
+``` \d{4}-\d{2}-\d{2} ```
+
 
 Escaping
 ---
  
  
-greediness
+greedy quantifiers: *, +, ?, {num,num }
 ---
 
 
 non-greedy qualifiers d*?c, d+?c, d??c, or d{m,n}?c,
 
+Lazy quantifiers: *?, +?, ??, {num,num }?
+---
+
+
+word boundaries- \b  \B
+---
+Matching whole word  :-  ing gathering cooking sleeping running   
+
+to match only ing instead of any other word which contains ing we can use boundary condition
+
+```\bing\b - start with 'i' and end with 'g'  ```
+
+```\Bing\B  -- doesnot start with 'i' and end with 'g'  ```
+
+To capture rest of the words except 'ing'  
+
+```\Bing|ing\B -- doesnot start with i or end with g```
+
+
+word characters \w \W
+---
+\w = [a-zA-Z0-9]
+
+extracting ip address
+---
+
+extracting email address
+---
+
+
+extracting phone numbers
+---
+
+extracting dates
+---
