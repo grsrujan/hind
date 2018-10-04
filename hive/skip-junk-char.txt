@@ -1,0 +1,11 @@
+Following query will strictly allow only numeric characters
+select * from dbanme.tbname where colname REGEXP '^[0-9]+$' ;
+
+Following query will skip numeric characters
+select * from dbanme.tbname where colname REGEXP '^[^0-9]+$' ;
+
+Following query will skip alpha numeric chararcters
+select * from dbanme.tbname where colname rlike '[^a-zA-Z\\d\\s:]';
+
+Following query will skip chararcters which are not alpha numeric
+select * from dbanme.tbname where colname rlike '[a-zA-Z\\d\\s:]';
